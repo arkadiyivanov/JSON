@@ -20,12 +20,12 @@ with open('surname_cash.txt', "w") as surname_cash:
         f = f.read()
         t = json.loads(f)
         for section, commands in t.items():
-            surname_cash.write(' '.join(commands))
+            surname_cash.write('\n'.join(commands))
     with open('cash.json') as f:
         f = f.read()
         t = json.loads(f)
         for section, commands in t.items():
-            surname_cash.write(' '.join(commands))
+            surname_cash.write('\n'.join(commands))
 
 
 
